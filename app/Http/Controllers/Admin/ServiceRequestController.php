@@ -116,6 +116,7 @@ class ServiceRequestController extends Controller
      * @param  user_id
      * @return \Illuminate\Http\Response
      */
+    
     public function showInvoice($id)
     {
         $serviceRequest = ServiceRequest::where('id', (int) $id)
