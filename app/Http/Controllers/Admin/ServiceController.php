@@ -68,7 +68,7 @@ class ServiceController extends Controller
         $service = Service::create([
             'name' => $validated['name'],
             'description' => $validated['description'],
-            //'location_type' => $validated['location_type']
+//            'location_type' => $validated['location_type']
         ]);
         $this->handleSlug($service);
         $this->handleLocations($service, $validated['locations']);
