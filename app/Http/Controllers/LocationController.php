@@ -66,6 +66,7 @@ class LocationController extends Controller
         $location = CityArea::where("city_id", $city_object->id)->with('city', 'city.state')->first();
         $city = $location->city;
         $seo_title = "$service->name in $city->city, $state_code | ". config('app.name', 'Serviced By ONE');
+        
         return view('services.show',
             [
                 'seo_title' => $seo_title,
