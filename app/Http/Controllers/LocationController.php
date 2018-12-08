@@ -50,7 +50,6 @@ class LocationController extends Controller
         if($services->count() < 1)
             $services = $city->state->services()->get();
 
-
         return view('location.city', ['city' => $city, 'services' => $services, 'agent' => $agent, 'state' => $state_code]);
     }
 
