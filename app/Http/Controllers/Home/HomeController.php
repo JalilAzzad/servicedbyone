@@ -128,6 +128,7 @@ class HomeController extends Controller
 
         if(sizeof($referrer) > 0)
             Cookie::queue('referrer', $referrer[0]->id, 10080);
+        
         return redirect('/');
     }
 
