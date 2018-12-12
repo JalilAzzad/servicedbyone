@@ -47,6 +47,7 @@
                                             <div class="col-lg-4 col-sm-6 services-item mb-4">
                                                 <div class="card h-100">
                                                         <a href="{{url($url)}}">
+                                                            
                                                             @if($count++ < 4)
                                                             <img class="card-img-top" src="{{ asset(str_replace('public','storage', $service->resized_featured_image)) }}" alt="">
                                                             @endif
