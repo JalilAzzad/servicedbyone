@@ -1,0 +1,21 @@
+
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import "~font-awesome/scss/font-awesome";
+
+// Variables
+@import "./variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "~select2/src/scss/core";
+@import "~jquery-ui-dist/jquery-ui.css";
+@import "~jquery-ui-dist/jquery-ui.theme.css";
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }

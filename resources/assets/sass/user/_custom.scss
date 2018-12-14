@@ -1,0 +1,207 @@
+// Add custom designs here if you not know which scss file to use
+
+/*
+ol, ul {
+  list-style: none;
+}
+*/
+.one-link, a {
+  color: #000000;
+  cursor: pointer;
+}
+.one-link, .one-link:active, .one-link:hover, a, a:active, a:hover {
+  color: #009fd9;
+}
+.one-link--dark {
+  color: #2f3033;
+  fill: #2f3033;
+  cursor: pointer;
+}
+.one-color--black-300 {
+  color: #000000!important;
+  fill: #000000!important;
+}
+.one-title-5 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+}
+.one-margin-bottom--double {
+  margin-bottom: 16px!important;
+}
+
+.one-link:hover, a:hover {
+    color: #28D18A !important;
+    text-decoration:none;
+}
+
+.scrolling-wrapper.services-item.services-item-scroll {
+    margin-bottom: 0 !important; 
+    padding: 10px 0 !important;
+}
+
+.header-title-2 {
+   font-size: 30px;
+   line-height: 44px;
+   font-weight: 700;
+}
+
+section {
+    background: #ffffff;
+}
+
+section#services {
+    background: #fafafa!important;
+    padding-top: 100px;
+}
+
+.service-question {
+    margin-bottom: 15px;
+}
+
+.service-question .form-check {
+    background: #fff;
+    padding: 10px 35px;
+    display: block;
+    border-bottom: 1px solid #eee;
+}
+
+.service-question h3 {
+    font-size: 16px;
+    color: #2f3033;
+    font-weight: 600;
+    padding-left: 5px;
+}
+.service-question-modal .close {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    opacity: 1;
+}
+.service-question-modal .modal-content {
+    background-color: #ffffff;
+    border:0;
+    border-radius: 0;
+    box-shadow: 0 0 5px 0 rgba(74, 74, 74, 0.75);
+}
+
+.pt-5, .py-5 {
+    padding-top: 5rem!important;
+}
+
+.pt-4, .py-4 {
+    padding-top: 4rem!important;
+}
+
+.pb-4, .py-4 {
+    padding-bottom: 4rem!important;
+}
+.py-4 .card {
+    border:0;
+    border-radius: 0;
+}
+.py-4 .card-header {
+    font-weight: 700;
+    font-size: 20px;
+    padding: .75rem 0;
+    background-color: rgb(255, 255, 255);
+}
+.py-4 .card-body {
+    padding: 1.25rem 0;
+}
+@media (max-width: 700px)
+{
+    a.nav-link {
+        line-height: 35px;
+        margin: 0;
+    }
+    li.nav-item {
+        border-bottom: 1px solid #eee;
+        padding: 0px !important;
+        margin: 0 20px;
+    }
+    li.nav-item:last-child {
+        border-bottom: 0;
+    }
+    #navbarResponsive {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    }
+}
+
+.sticky-parent {
+  align-items: flex-start;
+}
+.sticky-menu {
+  position: -webkit-sticky;position: sticky;top: 7rem;
+}
+.service-list {
+  margin-top: -90px;padding-top: 90px;
+}
+.service-category-name {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  margin-bottom: 24px!important
+}
+.bb-line {
+  margin-bottom: 24px!important;
+}
+div.is-mobile {
+  display: none
+}
+
+@media only screen and (max-width : 767px) {
+  div.is-mobile {
+    display: block;
+  }
+  div.sticky-menu {
+    display: none;
+  }
+  div.mobile-nav {
+    display: flex;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: #fff;
+    border-bottom: 1px solid #e9eced;
+    padding: 0 12px;
+    margin-bottom: 24px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  a.mobile-service-category {
+    padding: 12px 4px;
+    font-size: 12px;
+    width: 5.5em;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  span.mobile-nav-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+    text-align: center;
+    margin-top: 4px;
+    font-weight: 400;
+  }
+  .margin-top-50 {
+    margin-top: 50px;
+  }
+  .mobile-margin-top-40 {
+    margin-top: 40px;
+  }
+}
+.text-wrap {
+  word-wrap: break-word;
+}
+
+@media only screen and (max-width : 767px) {
+  .referral {
+    float: left!important;
+  }
+}

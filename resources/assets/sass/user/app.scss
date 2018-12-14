@@ -1,0 +1,53 @@
+// Fonts
+@import url("https://use.typekit.net/wyt0fsl.css");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import "~font-awesome/scss/font-awesome";
+
+// Variables
+@import "./variables";
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+@import "components/scrollingNav";
+@import "components/searchBox";
+
+@import "layouts/header";
+@import "layouts/footer";
+
+@import "pages/home";
+@import "pages/service";
+
+
+body {
+  margin: 0;
+  font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  color: #212529;
+  text-align: left;
+  background-color: #ffffff;
+  font-family: "proxima-nova", "Helvetica Nueue", Helvetica, "Calibri", Arial, sans-serif;
+}
+.one-margin-bottom--doubule { margin-bottom:10px; }
+section:last-child { border-bottom: 0; }
+
+@media (max-width: 700px)
+{
+  .services-item {
+    margin-bottom: 15px;
+  }
+  .global-footer__item__links {
+    margin-bottom: 15px;
+  }
+  .leadtext {
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+@import "custom";
+@import "buttons"

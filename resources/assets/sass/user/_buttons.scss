@@ -1,0 +1,38 @@
+.btn-primary {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+.btn-primary:hover {
+    color: #fff !important;
+    background-color: #005d15;
+    border-color: #005d15;
+}
+.btn-register {
+  width:100%;
+  color: #fff;
+  background-color: #28D18A;
+  border-color: #28D18A;
+}
+.Login-separator {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #676d73;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.Login-separator:after, .Login-separator:before {
+    content: "";
+    display: block;
+    flex: 1;
+    background: #e9eced;
+    height: 1px;
+}
+.Login-separator:before {
+    margin-right: 12px;
+}
+.Login-separator:after {
+    margin-left: 12px;
+}
