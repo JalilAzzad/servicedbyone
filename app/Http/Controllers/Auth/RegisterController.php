@@ -86,7 +86,6 @@ class RegisterController extends Controller
         }
 
         $user->syncRoles([User::USER]);
-
         $user->sendEmailVerificationNotification();
 
         return $user;
