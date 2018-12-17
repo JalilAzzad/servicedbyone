@@ -76,6 +76,7 @@ class ServiceController extends Controller
         $service->questions()->sync($validated['questions']);
         $path = isset($validated['featured_image']) ? $validated['featured_image']->store('public/services/'. $service->id) : null;
         $service->update(['featured_image' => $path]);
+        
         $service->update(['resized_featured_image' => $this->resizedImage($path)]);
         return redirect('/admin/services')->with('status', 'Service is created successfully!!!');
     }
@@ -137,6 +138,7 @@ class ServiceController extends Controller
                 Storage::delete($service->featured_image);
             $path = $validated['featured_image']->store('public/services/' . $service->id);
             $service->update(['featured_image' => $path]);
+            
             $service->update(['resized_featured_image' => $this->resizedImage($path)]);
         }
         return redirect('/admin/services')->with('status', 'Service is updated successfully!!!');
